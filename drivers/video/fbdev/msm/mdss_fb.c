@@ -52,8 +52,14 @@
 #include "mdss_debug.h"
 #include "mdss_smmu.h"
 #include "mdss_mdp.h"
+
+#ifdef CONFIG_KLAPSE
+#include <linux/klapse.h>
+#endif
+
 #include "mdp3_ctrl.h"
 #include "mdss_sync.h"
+
 
 #ifdef CONFIG_FB_MSM_TRIPLE_BUFFER
 #define MDSS_FB_NUM 3
